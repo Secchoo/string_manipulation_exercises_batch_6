@@ -8,6 +8,7 @@ string without using the built-in swapcase() method.
 def custom_swapcase(string):
     swapped = []
     for i in string:
+        # Check if the character is uppercase or lowercase
         if 'A' <= i <= 'Z':
             swapped.append(chr(ord(i) + 32))
         elif 'a' <= i <= 'z':

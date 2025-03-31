@@ -6,8 +6,11 @@ without using the built-in isupper() method.
 """
 
 def is_upper(string):
+    # Initialize flags to track if the string 
+    # has cased characters and if all are uppercase
     has_cased = False
     all_upper = True
+    # Iterate through each character in the string
     for i in string:
         if 'A' <= i <= 'Z' or 'a' <= i <= 'z':
             has_cased = True

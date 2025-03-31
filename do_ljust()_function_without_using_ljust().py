@@ -6,6 +6,7 @@ using the built-in ljust() method.
 """
 
 def custom_ljust(string, width):
+    # Check if the width is less than or equal to 0
     if len(string) >= width:
         return string
     return string + ' ' * (width - len(string))

@@ -6,10 +6,11 @@ This function checks if a string ends with a given
 suffix without using the built-in endswith() method.
 """
 
-# endswith() function without using endswith()
 def endswith(string, suffix):
+    # Check if the suffix is empty
     if len(suffix) == 0:
         return True
+    # Check if the string is shorter than the suffix
     if len(string) < len(suffix):
         return False
     return string[-len(suffix):] == suffix
