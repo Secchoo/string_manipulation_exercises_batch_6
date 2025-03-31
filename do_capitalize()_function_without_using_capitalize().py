@@ -1,4 +1,4 @@
-#capitalize first letter without using capitalize()
+#To capitalize a string without using the built-in capitalize() method
 
 """
 This function capitalizes the first letter of a string without
