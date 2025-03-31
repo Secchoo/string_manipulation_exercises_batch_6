@@ -5,13 +5,13 @@ this function checks if a string is upper case or not
 without using the built-in isupper() method.
 """
 
-def is_upper(s):
+def is_upper(string):
     has_cased = False
     all_upper = True
-    for c in s:
-        if 'A' <= c <= 'Z' or 'a' <= c <= 'z':
+    for i in string:
+        if 'A' <= i <= 'Z' or 'a' <= i <= 'z':
             has_cased = True
-            if 'a' <= c <= 'z':
+            if 'a' <= i <= 'z':
                 all_upper = False
     return has_cased and all_upper
 

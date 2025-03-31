@@ -5,10 +5,10 @@ This function justifies a string to the left within a given width without
 using the built-in ljust() method.
 """
 
-def custom_ljust(s, width):
-    if len(s) >= width:
-        return s
-    return s + ' ' * (width - len(s))
+def custom_ljust(string, width):
+    if len(string) >= width:
+        return string
+    return string + ' ' * (width - len(string))
 
 # Test cases
 test_str = "hello"
