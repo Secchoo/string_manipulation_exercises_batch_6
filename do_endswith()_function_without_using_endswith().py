@@ -1,13 +1,11 @@
 #use endwith() function without using endswith() function
 
-#ask user for input
-string = input("Enter a string: ")
+def endswith(s, suffix):
+    if len(suffix) == 0:
+        return True
+    if len(s) < len(suffix):
+        return False
+    return s[-len(suffix):] == suffix
 
-#endwith function without using endswith()
-if string[-3:] == "ing":
-    string = string + "ed"
-else:
-    string = string + "ing"
-
-#call the function and print the result
-print(string)
+print(endswith("hello world", "world"))  
+print(endswith("hello world", "hello"))
