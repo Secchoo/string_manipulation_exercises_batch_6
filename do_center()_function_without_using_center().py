@@ -1,28 +1,17 @@
 #do center function without using center
 
-#ask user for input
-string = input("Enter a string: ")
+# Get input from the user
+string = input("Enter the string: ")
+width = int(input("Enter the width: "))
 
-#center the string without using center()
-#calculate the number of spaces to add on each side
-spaces = (80 - len(string)) // 2
-#add spaces to the left and right of the string
-string = ' ' * spaces + string + ' ' * spaces
-#check if the string is odd length and add one space to the right side
-if (80 - len(string)) % 2 != 0:
-    string += ' '
-#check if the string is even length and add one space to the left side
-if (80 - len(string)) % 2 == 0:
-    string = ' ' + string
-#check if the string is odd length and add one space to the left side
-if (80 - len(string)) % 2 != 0:
-    string = ' ' + string
-#check if the string is even length and add one space to the right side
-if (80 - len(string)) % 2 == 0:
-    string += ' '
+# Calculate padding
+if len(string) >= width:
+    centered = string
+else:
+    total_pad = width - len(string)
+    left_pad = total_pad // 2
+    right_pad = total_pad - left_pad
+    centered = ' ' * left_pad + string + ' ' * right_pad
 
-
-
-
-#call the function and print the result
-print(string)
+# Output the result
+print(centered)
