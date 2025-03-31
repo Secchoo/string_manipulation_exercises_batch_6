@@ -1,5 +1,10 @@
 #capitalize first letter without using capitalize()
 
+"""
+This function capitalizes the first letter of a string without
+using the built-in capitalize() method.
+"""
+
 #ask user for input
 string = input("Enter a string: ")
 

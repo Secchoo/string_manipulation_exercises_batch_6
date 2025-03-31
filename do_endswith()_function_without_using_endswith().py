@@ -1,4 +1,9 @@
-#use endwith() function without using endswith() function
+#use endwith() function without using endswith() 
+
+"""
+This function checks if a string ends with a given 
+suffix without using the built-in endswith() method.
+"""
 
 def endswith(s, suffix):
     if len(suffix) == 0:

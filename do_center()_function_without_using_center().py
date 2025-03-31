@@ -1,4 +1,10 @@
-#do center function without using center
+#do center function without using center()
+
+"""
+This function centers a string within a given width without 
+using the built-in center() method.
+It adds padding to the left and right of the string as needed.
+"""
 
 # Get input from the user
 string = input("Enter the string: ")
