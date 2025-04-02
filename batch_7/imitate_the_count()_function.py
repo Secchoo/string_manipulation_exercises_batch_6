@@ -16,3 +16,5 @@ def imitate_count(string, sub):
         if string[i:i + sub_len] == sub:
             count += 1
     return count
+
+print(custom_count("ababa", "aba"))
