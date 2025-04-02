@@ -11,3 +11,5 @@ def imitate_index(string, sub):
         if string[i:i + sub_len] == sub:
             return i
     raise ValueError("substring not found")
+
+print(imitate_index("abab", "ba"))
