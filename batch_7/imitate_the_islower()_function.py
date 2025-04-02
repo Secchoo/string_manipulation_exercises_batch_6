@@ -5,12 +5,12 @@ This function takes a string as input and returns True
 if all the characters in the string are lowercase letters, 
 and False otherwise.
 """
-def imitate_islower(s):
+def imitate_islower(string):
     has_cased = False
-    for c in s:
-        if c.isalpha():
+    for i in string:
+        if i.isalpha():
             has_cased = True
-            if not ('a' <= c <= 'z'):
+            if not ('a' <= i <= 'z'):
                 return False
     return has_cased
 
