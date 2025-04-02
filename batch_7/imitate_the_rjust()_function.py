@@ -10,3 +10,5 @@ def imitate_rjust(string, width, fillchar=' '):
         return string
     else:
         return fillchar * (width - len(string)) + string
+    
+print(imitate_rjust("Hello", 10))  
