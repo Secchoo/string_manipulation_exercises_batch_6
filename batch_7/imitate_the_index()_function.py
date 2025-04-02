@@ -14,4 +14,4 @@ def imitate_index(s, sub):
             return i
     raise ValueError("Substring not found")
 
-print(imitate_index("Green apples", "apples"))
+print(imitate_index("Green apples", "Green"))
