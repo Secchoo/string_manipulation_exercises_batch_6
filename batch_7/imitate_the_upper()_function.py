@@ -5,14 +5,14 @@ This function takes a string as input and returns the string
 with all characters converted to uppercase letters.
 """
 
-def custom_upper(s):
+def imitate_upper(string):
     result = []
-    for c in s:
-        if 'a' <= c <= 'z':
-            result.append(chr(ord(c) - 32))
+    for i in string:
+        if 'a' <= i <= 'z':
+            result.append(chr(ord(i) - 32))
         else:
-            result.append(c)
+            result.append(i)
     return ''.join(result)
 
 
-print(custom_upper("Hello World"))
+print(imitate_upper("Hello World"))
