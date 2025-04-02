@@ -7,7 +7,7 @@ with trailing whitespace removed.
 
 def imitate_rstrip(string):
     end = len(string)
-    while end > 0 and s[end - 1] == ' ':
+    while end > 0 and string[end - 1] == ' ':
         end -= 1
     return string[:end]
 
