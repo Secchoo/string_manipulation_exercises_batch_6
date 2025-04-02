@@ -5,7 +5,7 @@ This function takes a string as input and returns True
 if all the characters in the string are lowercase letters, 
 and False otherwise.
 """
-def custom_islower(s):
+def imitate_islower(s):
     has_cased = False
     for c in s:
         if c.isalpha():
@@ -14,4 +14,4 @@ def custom_islower(s):
                 return False
     return has_cased
 
-print(custom_islower("hello"))  
+print(imitate_islower("hello"))  
