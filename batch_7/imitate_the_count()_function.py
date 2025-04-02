@@ -17,4 +17,4 @@ def imitate_count(string, sub):
             count += 1
     return count
 
-print(custom_count("ababa", "aba"))
+print(imitate_count("abab", "aba"))
