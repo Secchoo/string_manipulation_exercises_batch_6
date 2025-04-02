@@ -25,5 +25,5 @@ def imitate_index(string, sub):
     raise ValueError("Substring not found")
 
 
-print(imitate_index("Green apples", "Green"))  # Output: 0
-print(imitate_index("Green apples", "apples"))  # Output: 6
+print(imitate_index("Green apples", "Green"))  
+print(imitate_index("Green apples", "apples"))  
